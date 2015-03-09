@@ -4,7 +4,7 @@
 
 Preap is a minimal Sublime Text theme and a syntax color scheme. It was originally just a slightly tweaked version of the [Predawn](https://github.com/jamiewilson/predawn) theme. 
 
-![image](screenshots/general.jpg)
+![image](http://i.imgur.com/DmK7OEZ.jpg)
 
 [View a larger screenshot](https://raw.githubusercontent.com/equinusocio/preap/master/screenshots/general.jpg)
 
@@ -32,7 +32,7 @@ Of course, you can always [download latest release](https://github.com/equinusoc
 
 Open your user settings file `preferences.sublime-settings` as shown below:
 
-![image](screenshots/activation.jpg)
+![image](http://i.imgur.com/BMlxjZ0.jpg)
 
 To activate the theme, add or replace your current theme settings with the code below.
 
@@ -46,7 +46,7 @@ To activate the theme, add or replace your current theme settings with the code 
 
 
 ## Markdown Settings
-![markdown](screenshots/markdown.jpg)
+![markdown](https://d13yacurqjgara.cloudfront.net/users/44860/screenshots/1963910/attachments/341527/markdown.jpg)
 
 #### To enable Preap for Markdown
 
@@ -70,7 +70,7 @@ This theme allow specific settings, see below:
 
 #### Tab Height Size Options
 
-![image](screenshots/tabs.jpg)
+![image](http://i.imgur.com/LjEiT8p.jpg)
 
 You can change the height of the file tabs by adding either to your preferences file:
 
@@ -86,7 +86,7 @@ OR
 
 #### Find & Replace Small Size Option
 
-![image](screenshots/find-replace.jpg)
+![image](https://d13yacurqjgara.cloudfront.net/users/44860/screenshots/1963910/attachments/341526/find-replace.jpg)
 
 You can change the height of the Find/Replace inputs by adding the following to preferences file:
 
@@ -97,7 +97,7 @@ After enabling the smaller size, you'll need to drag the height of the Find/Repl
 
 #### Sidebar Size Options
 
-![image](screenshots/sidebar.jpg)
+![image](https://d13yacurqjgara.cloudfront.net/users/44860/screenshots/1963910/attachments/341528/sidebar.jpg)
 
 You can change the vertical spacing of the sidebar by changing `default` to `large`, `xlarge`:
 
