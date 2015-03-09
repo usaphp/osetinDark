@@ -1,14 +1,13 @@
 ____________________________________________________________________________
 | 
-| ╔═╗╦═╗╔═╗╔═╗╔═╗   UI Theme for
-| ╠═╝╠╦╝║╣ ╠═╣╠═╝   Sublime Text
+| ╔═╗╦═╗╔═╗╔═╗╔═╗   Preap Dark Theme
+| ╠═╝╠╦╝║╣ ╠═╣╠═╝   Sublime Text 3
 | ╩  ╩╚═╚═╝╩ ╩╩     https://github.com/equinusocio/preap
 |____________________________________________________________________________
 
 	
 
 	To activate the theme, add or replace your current theme settings with the code below.
-
 	************************************************************************
 
 	{
@@ -16,47 +15,26 @@ ____________________________________________________________________________
 		"color_scheme": "Packages/Preap/Schemes/preap.tmTheme",
 	}
 
+
+
+
+	To enable Preap for Markdown
+	************************************************************************
+
+	First, **open a markdown(.md) file**, then navigate to `Sublime Text` > `Preferences` > `Settings - More` > `Syntax Specific - User`  in the menu bar.
+	Add to your current settings or replace with the following:
+
+	{
+		"color_scheme": "Packages/Preap/Schemes/preap-markdown.tmTheme",
+		"draw_centered": true, // Centers the column in the window
+		"draw_indent_guides": false,
+		"font_size": 15,
+		"trim_trailing_white_space_on_save": false,
+		"word_wrap": true,
+		"wrap_width": 80  // Sets the # of characters per line
+	}
+
+
 	************************************************************************
 	MAKE SURE TO RESTART SUBLIME AFTER INSTALLING AND ACTIVATING PREAP
 
-
-
-
-	======================================
-
-	Also, some other settings you can add:
-
-	=====================================+
-
-	// Typography
-
-		"font_face": "Consolas",
-		"font_size": 14,
-		"font_options": ["no_round"],
-		"highlight_line": true,
-		"caret_extra_width": 1,
-		"caret_style": "phase",
-		"word_wrap": false,
-
-	// Whitespace, Matching, Copy & Auto-Complete
-
-		"copy_with_empty_selection": false,
-		"drag_text": false,
-		"match_brackets_content": false,
-		"match_selection": false,
-		"match_tags": false,
-		"translate_tabs_to_spaces": true,
-		"trim_trailing_white_space_on_save": true,
-
-	// Interface & Behavior
-
-		"sidebar_default": true, // Replace default with xsmall, small, medium, large or xlarge
-		"close_windows_when_empty": false,
-		"draw_minimap_border": true,
-		"enable_tab_scrolling": false,
-		"overlay_scroll_bars": "enabled",
-		"open_files_in_new_window": false,
-		"preview_on_click": false,
-		"scroll_past_end": true,
-		"scroll_speed": 5.0,
-		"show_full_path": false
