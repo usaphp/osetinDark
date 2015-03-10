@@ -8,7 +8,6 @@ Preap is a minimal Sublime Text theme and a syntax color scheme. It was original
 
 [View a larger screenshot](https://raw.githubusercontent.com/equinusocio/preap/master/screenshots/general.jpg)
 
-[Python syntax](http://i.imgur.com/1h9P4Mb.png?1)
 
 ## Requirements
 
