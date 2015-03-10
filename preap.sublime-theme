@@ -81,13 +81,13 @@
     {
         "class": "tab_control",
         "settings": ["tabs_small"],
-        "content_margin": [12, 1, 9, 4]
+        "content_margin": [12, 4, 9, 4]
     },
     {
         "class": "tab_control",
         "attributes": ["selected"],
         "settings": ["tabs_small"],
-        "content_margin": [12, 1, 9, 4]
+        "content_margin": [12, 4, 9, 4]
     },
         // Tab labels
     {
@@ -151,7 +151,7 @@
     {
         "class": "tab_close_button",
         "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
-        "layer0.opacity": 1.0,
+        "layer0.opacity": 0,
         "layer1.opacity": 0,
         "layer2.opacity": 1
     },
@@ -502,7 +502,7 @@
     {
         "class": "tree_row",
         "attributes": ["selected"],
-        "layer0.opacity": 1.0
+        "layer0.opacity": 1
     },
         // Sidebar heading
     {
@@ -587,7 +587,7 @@
         "content_margin": [8, 8],
         "layer0.texture": "Preap/assets/folder.png",
         "layer1.texture": "Preap/assets/folder_open.png",
-        "layer0.opacity": 1.0,
+        "layer0.opacity": 1,
         "layer1.opacity": 0
     },
        // Loader on folder loading
@@ -614,6 +614,7 @@
         "layer0.opacity": 1.0,
         "content_margin": [6, 6]
     },
+
 
         // Sidebar file close hover
 
