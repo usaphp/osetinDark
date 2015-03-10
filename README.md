@@ -8,6 +8,8 @@ Preap is a minimal Sublime Text theme and a syntax color scheme. It was original
 
 [View a larger screenshot](https://raw.githubusercontent.com/equinusocio/preap/master/screenshots/general.jpg)
 
+[Python syntax](http://i.imgur.com/1h9P4Mb.png?1)
+
 ## Requirements
 
 **Sublime Text 3 (recent build)**
@@ -41,6 +43,7 @@ To activate the theme, add or replace your current theme settings with the code 
 		"color_scheme": "Packages/Preap/Schemes/preap.tmTheme",
 	}
 
+However if you use packages like [SublimeLinter](https://github.com/SublimeLinter/) color theme might fail to load with . To load it manually, delete the `color_scheme` line and selelct from the `Preferences tab -> Color scheme -> Preap -> Schemes -> Preap`. Don't worry about the `color_scheme` line in your `Preferences.sublime_settings`, it'll be updated automatically.
 
 *** IMPORTANT - MAKE SURE TO RESTART SUBLIME AFTER INSTALLING AND ACTIVATING PREAP ***
 
@@ -64,6 +67,9 @@ First, **open a markdown(.md) file**, then navigate to `Sublime Text` > `Prefere
 		"word_wrap": true,
 		"wrap_width": 80  // Sets the # of characters per line
 	}
+
+However if you use packages like [SublimeLinter](https://github.com/SublimeLinter/) color theme might fail to load with . To load it manually, delete the `color_scheme` line and selelct from the `Preferences tab -> Color scheme -> Preap -> Schemes -> preap-markdown`. Don't worry about the `color_scheme` line in your `Preferences.sublime_settings`, it'll be updated automatically.
+
 
 ## Theme specific settings
 This theme allow specific settings, see below:
