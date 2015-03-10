@@ -272,7 +272,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#dfc354ff</string>
+				<string>#F0CD45</string>
 			</dict>
 		</dict>
 		<dict>
@@ -301,7 +301,7 @@
 			<key>name</key>
 			<string>css property-name: psuedos and attibutes</string>
 			<key>scope</key>
-			<string>support.type.property-name.css, support.type.property-name.scss, entity.other.attribute-name.pseudo-element.css, entity.other.attribute-name.pseudo-class.css, entity.other.attribute-name.attribute.css, variable.scss, meta.property-name.scss</string>
+			<string>support.type.property-name.css, support.type.property-name.scss, entity.other.attribute-name.pseudo-element.css, entity.other.attribute-name.pseudo-class.css, entity.other.attribute-name.attribute.css, variable.scss, meta.property-name.scss, meta.property-name.less, meta.property-list.css meta.property-name.css</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>

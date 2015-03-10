@@ -16,6 +16,7 @@
         "tab_height": 58,
         "mouse_wheel_switch": false
     },
+        // Options
     {
         "class": "tabset_control",
         "settings": ["mouse_wheel_switches_tabs"],
@@ -76,6 +77,18 @@
         "layer1.opacity": 1.0,
         "layer2.opacity": 0
     },
+        // Options
+    {
+        "class": "tab_control",
+        "settings": ["tabs_small"],
+        "content_margin": [10, 0,9, 4]
+    },
+    {
+        "class": "tab_control",
+        "attributes": ["selected"],
+        "settings": ["tabs_small"],
+        "content_margin": [10, 0,9, 4]
+    },
         // Tab labels
     {
         "class": "tab_label",
@@ -97,18 +110,23 @@
         // Tab close button
     {
         "class": "tab_close_button",
-        "content_margin": [0, 0],
+        "content_margin": [25, 25],
 
         // Tab close default settings
 
         "layer0.texture": "Preap/assets/tab-close.png",
         "layer0.opacity": 0.25,
-        "layer0.inner_margin": [0, 0],
+        "layer0.inner_margin": [8, 8],
 
         // Tab close hover settings
 
         "layer1.texture": "Preap/assets/tab-close-hover.png",
-        "layer1.opacity": 0
+        "layer1.opacity": 0,
+
+        // Tab close modified hover settings
+
+        "layer2.texture": "Preap/assets/tab-dirty-active.png",
+        "layer2.opacity": 0
     },
         // Tab button size
     {
@@ -137,7 +155,8 @@
         "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
         "attributes": ["hover"],
         "layer0.opacity": 0,
-        "layer1.opacity": 1.0
+        "layer1.opacity": 0,
+        "layer2.opacity": 1.0
     },
         // Tab dirty button active
     {
@@ -485,6 +504,7 @@
         "class": "sidebar_heading",
         "color": [120, 120, 120],
         "font.bold": true
+
     },
         // Sidebar entry
     {
@@ -559,7 +579,7 @@
 
     {
         "class": "disclosure_button_control",
-        "content_margin": [7, 7],
+        "content_margin": [8, 8],
         "layer0.texture": "Preap/assets/folder.png",
         "layer1.texture": "Preap/assets/folder_open.png",
         "layer0.opacity": 1.0,
@@ -975,7 +995,8 @@
         "class": "icon_in_selection",
         "layer0.texture": "Preap/assets/icon-selection-off.png",
         "layer0.opacity": 1.0,
-        "content_margin": [8, 8]
+        "content_margin": [8, 8],
+        "layer0.tint": [148,211,209]
     },
     {
         "class": "icon_in_selection",
