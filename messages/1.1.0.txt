@@ -10,7 +10,7 @@ ____________________________________________________________________________
 
 	- Revisited tabs bar
 	- New markup file icon
-	- Insane filesize compression for assets
+	- Assets filesize compression
 	- Increased folder icon size in tree view
 
 
