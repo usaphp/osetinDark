@@ -439,7 +439,7 @@
     {
         "class": "status_bar",
         "layer0.texture": "Preap/assets/status-bar-background.png",
-        "layer0.opacity": 1.0,
+        "layer0.opacity": 1,
         "layer0.inner_margin": [2, 2],
         "content_margin": [15, 5, 5, 5]
     },
@@ -465,7 +465,7 @@
         "layer0.opacity": 1,
         "layer0.draw_center": false,
         "layer0.inner_margin": 0,
-        "content_margin": [0, 0, 0, 0]
+        "content_margin": [0, 15, 0, 0]
     },
         // Sidebar tree
     {
@@ -659,7 +659,7 @@
         // Default button state
 
         "layer0.texture": "Preap/assets/btn-large-on.png",
-        "layer0.opacity": 1,
+        "layer0.opacity": 0,
         "layer0.inner_margin": [10, 10]
     },
     {
@@ -678,7 +678,7 @@
         "class": "text_line_control",
         "layer0.texture": "Preap/assets/text-field.png",
         "layer0.opacity": 1,
-        "content_margin": [14, 10]
+        "content_margin": [18, 15]
     },
     {
         "class": "text_line_control",
@@ -696,8 +696,8 @@
         "class": "panel_control",
         "layer0.texture": "Preap/assets/panel-background.png",
         "layer0.inner_margin": [2, 2, 2, 2],
-        "layer0.opacity": 1.0,
-        "content_margin": [0, 0, -5, 0]
+        "layer0.opacity": 1,
+        "content_margin": [0, 5, -5, 10]
     },
         // Quick panel background
     {
@@ -777,18 +777,18 @@
     },
     {
         "class": "auto_complete",
-        "row_padding": [5, 5],
-        "layer0.tint": [33, 33, 33],
+        "row_padding": [15, 10],
+        "layer0.tint": [34, 36, 38],
         "layer0.opacity": 1.0
     },
     {
         "class": "auto_complete_label",
         "fg": [140, 140, 140],
-        "match_fg": [255, 255, 255],
-        "bg": [26, 26, 26],
+        "match_fg": [243, 103, 129],
+        "bg": [0, 26, 26],
         "selected_fg": [255, 255, 255],
         "selected_match_fg": [255, 255, 255],
-        "selected_bg": [85, 85, 85]
+        "selected_bg": [255, 48, 49]
     },
     {
         "class": "table_row",
@@ -810,7 +810,7 @@
     {
         "class": "icon_button_control",
         "layer0.texture": "Preap/assets/btn-group-middle.png",
-        "layer0.opacity": 1,
+        "layer0.opacity": 0,
         "content_margin": [20, 15]
     },
     {
@@ -823,7 +823,7 @@
         "class": "icon_button_control",
         "attributes": ["left"],
         "layer0.texture": "Preap/assets/btn-group-left.png",
-        "layer0.opacity": 1,
+        "layer0.opacity": 0,
         "content_margin": [20, 15, 15, 15]
     },
     {
@@ -837,7 +837,7 @@
         "class": "icon_button_control",
         "attributes": ["right"],
         "layer0.texture": "Preap/assets/btn-group-right.png",
-        "layer0.opacity": 1,
+        "layer0.opacity": 0,
         "content_margin": [15, 15, 20, 15]
     },
     {
@@ -851,7 +851,7 @@
         "class": "icon_button_control",
         "attributes": ["left", "right"],
         "layer0.texture": "Preap/assets/btn-single.png",
-        "layer0.opacity": 1,
+        "layer0.opacity": 0,
         "content_margin": [20, 15]
     },
     {
