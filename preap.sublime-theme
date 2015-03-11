@@ -131,7 +131,16 @@
 
         // Tab close modified hover settings
 
-        "layer2.texture": "Preap/assets/tab-dirty-active.png",
+        //"layer2.texture": "Preap/assets/tab-dirty-active.png",
+        "layer2.texture": {
+            "keyframes":
+            [
+                "Preap/assets/close_tab/tab-dirty.png",
+                "Preap/assets/close_tab/tab-dirty1.png"
+            ],
+            "loop": true,
+            "frame_time": 0.800,
+        },
         "layer2.opacity": 0
     },
         // Tab button size
