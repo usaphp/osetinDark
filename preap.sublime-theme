@@ -113,16 +113,15 @@
         "parents": [{"class": "tab_control", "attributes": ["selected"]}],
         "fg": [255, 255, 255]
     },
-        // Tab close button
+        // Default tab close button and size
     {
         "class": "tab_close_button",
-        "content_margin": [25, 25],
+        "content_margin": [8, 8],
 
         // Tab close default settings
 
         "layer0.texture": "Preap/assets/tab-close.png",
         "layer0.opacity": 0.25,
-        "layer0.inner_margin": [8, 8],
 
         // Tab close hover settings
 
@@ -137,15 +136,16 @@
         // Tab button size
     {
         "class": "tab_close_button",
-        "settings": ["show_tab_close_buttons"],
-        "content_margin": [8, 8]
+        "settings": ["!show_tab_close_buttons"],
+        "content_margin": [0, 0]
     },
+
         // Tab close button hover
     {
         "class": "tab_close_button",
         "attributes": ["hover"],
         "layer0.opacity": 0,
-        "layer1.opacity": 1.0
+        "layer1.opacity": 1
     },
         // Tab dirty button
     {
@@ -196,7 +196,7 @@
         "font.italic": true
     },
 
-     //
+        //
         // FOLD BUTTONS
         //
 
@@ -240,57 +240,56 @@
         "layer0.opacity": 1
     },
         //
-        // STANDARD SCROLLBARS
+        //  STANDARD SCROLLBARS
         //
 
         // Standard vertical scroll bar
     {
         "class": "scroll_bar_control",
-        "layer0.tint": [69,183,207],
+        "layer0.tint": [51,51,51],
         "layer0.opacity": 1,
         "layer0.inner_margin": 0,
         "blur": true
     },
-            // Standard horizontal scroll bar
+        // Standard horizontal scroll bar
     {
         "class": "scroll_bar_control",
         "attributes": ["horizontal"],
-        "layer0.tint": [69,183,207],
+        "layer0.tint": [51,51,51],
         "layer0.inner_margin": 0,
         "blur": true
     },
-            // Standard scroll bar corner
+        // Standard scroll bar corner
     {
         "class": "scroll_corner_control",
-        "layer0.tint":[69,183,207],
+        "layer0.tint":[11,16,21],
         "layer0.inner_margin": 0,
         "layer0.opacity": 1
     },
-            // Standard vertical scroll puck
+        // Standard vertical scroll puck
     {
         "class": "puck_control",
         "layer0.tint":[69,183,207], // auto complete SB
         "layer0.opacity": 1,
         "layer0.inner_margin": 0,
-        "content_margin": [3,0],
+        "content_margin": [1,0],
         "blur": false
     },
-            // Standard horizontal scroll puck
+        // Standard horizontal scroll puck
     {
         "class": "puck_control",
         "attributes": ["horizontal"],
-        "layer0.tint":[69,183,207],
+        "layer0.tint":[22,31,39],
         "layer0.inner_margin": 0,
-        "content_margin": [12,3],
+        "content_margin": [12,1],
         "blur": false
     },
 
         //
-        // OVERLAY SCROLLBARS
+        //  OVERLAY SCROLLBARS
         //
 
         // Overlay toggle scroll bar
-
     {
         "class": "scroll_area_control",
         "settings": ["overlay_scroll_bars"],
@@ -301,49 +300,41 @@
         "settings": ["!overlay_scroll_bars"],
         "overlay": false
     },
-
         // Overlay vertical scroll bar
-
     {
         "class": "scroll_bar_control",
         "settings": ["overlay_scroll_bars"],
-        "layer0.texture": "Preap/assets/overlay-scrollbar-vertical.png",
-        "layer0.inner_margin": [0, 5],
-        "blur": false
+        "layer0.tint":[51,51,51], // Scrollbar track
+        "layer0.opacity": 1,
+        "layer0.inner_margin": [0,5],
+        "blur": true
     },
-
         // Overlay horizontal scroll bar
-
     {
         "class": "scroll_bar_control",
         "settings": ["overlay_scroll_bars"],
         "attributes": ["horizontal"],
-        "layer0.texture": "Preap/assets/overlay-scrollbar-horizontal.png",
-        "layer0.inner_margin": [5, 0],
-        "blur": false
+        "layer0.tint":[51,51,51], // Scrollbar track
+        "layer0.inner_margin": [5,0],
+        "blur": true
     },
-
         // Overlay vertical puck
-
     {
         "class": "puck_control",
         "settings": ["overlay_scroll_bars"],
-        "layer0.texture": "Preap/assets/overlay-puck-vertical.png",
-        "layer0.inner_margin": [0, 5],
-        "content_margin": [5, 20],
-        "blur": false
+        "layer0.inner_margin": [0,5],
+        "layer0.tint":[69,183,207],
+        "content_margin": [1,38],
+        "blur": true
     },
-
         // Overlay horizontal puck
-
     {
         "class": "puck_control",
         "settings": ["overlay_scroll_bars"],
         "attributes": ["horizontal"],
-        "layer0.texture": "Preap/assets/overlay-puck-horizontal.png",
-        "layer0.inner_margin": [5, 0],
-        "content_margin": [20, 5],
-        "blur": false
+        "layer0.inner_margin": [5,0],
+        "content_margin": [16,1],
+        "blur": true
     },
 
         //
