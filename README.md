@@ -4,9 +4,9 @@
 
 Preap is a minimal Sublime Text theme and a syntax color scheme. It was originally just a slightly tweaked version of the [Predawn](https://github.com/jamiewilson/predawn) theme. 
 
-![image](http://i.imgur.com/DmK7OEZ.jpg)
+![image](http://i.imgur.com/zLcqwXA.jpg)
 
-[View a larger screenshot](https://raw.githubusercontent.com/equinusocio/preap/master/screenshots/general.jpg)
+[View a larger screenshot](http://i.imgur.com/zLcqwXA.jpg)
 
 
 ## Requirements
@@ -33,7 +33,7 @@ Of course, you can always [download latest release](https://github.com/equinusoc
 
 Open your user settings file `preferences.sublime-settings` as shown below:
 
-![image](http://i.imgur.com/BMlxjZ0.jpg)
+![image](http://i.imgur.com/ZTr1qXo.png)
 
 To activate the theme, add or replace your current theme settings with the code below.
 
@@ -48,7 +48,7 @@ However if you use packages like [SublimeLinter](https://github.com/SublimeLinte
 
 
 ## Markdown Settings
-![markdown](https://d13yacurqjgara.cloudfront.net/users/44860/screenshots/1963910/attachments/341527/markdown.jpg)
+![markdown](http://i.imgur.com/alcPmqB.jpg)
 
 #### To enable Preap for Markdown
 
@@ -75,7 +75,7 @@ This theme allow specific settings, see below:
 
 #### Tab Height Size Options
 
-![image](http://i.imgur.com/LjEiT8p.jpg)
+![image](http://i.imgur.com/vYDRxth.jpg)
 
 You can change the height of the file tabs by adding either to your preferences file:
 
@@ -91,7 +91,7 @@ OR
 
 #### Find & Replace Small Size Option
 
-![image](https://d13yacurqjgara.cloudfront.net/users/44860/screenshots/1963910/attachments/341526/find-replace.jpg)
+![image](http://i.imgur.com/zyKx37T.jpg)
 
 You can change the height of the Find/Replace inputs by adding the following to preferences file:
 
@@ -102,7 +102,7 @@ After enabling the smaller size, you'll need to drag the height of the Find/Repl
 
 #### Sidebar Size Options
 
-![image](https://d13yacurqjgara.cloudfront.net/users/44860/screenshots/1963910/attachments/341528/sidebar.jpg)
+![image](http://i.imgur.com/3OIKP5d.jpg)
 
 You can change the vertical spacing of the sidebar by changing `default` to `large`, `xlarge`:
 
