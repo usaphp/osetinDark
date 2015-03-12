@@ -128,14 +128,14 @@
     {
         "class": "tab_label",
         "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
-        "settings": ["!show_tab_close_buttons"],
+        "settings": ["!show_tab_close_buttons", "highlight_modified_tabs"],
         "fg": [153, 88, 100]
     },
         // Unsaved selected tab labels
     {
         "class": "tab_label",
         "parents": [{"class": "tab_control", "attributes": ["selected","dirty"]}],
-        "settings": ["!show_tab_close_buttons"],
+        "settings": ["!show_tab_close_buttons", "highlight_modified_tabs"],
         "fg": [243, 103, 129]
     },
         // Default tab close button and size
@@ -143,20 +143,14 @@
         "class": "tab_close_button",
         "content_margin": [8, 8],
 
-        // Tab close default settings
-
+        // Tab close default layer
         "layer0.texture": "Preap/assets/tab-close.png",
-        "layer0.opacity": 0.25,
-
-        // Tab close hover settings
-
-        "layer1.texture": "Preap/assets/tab-close-hover.png",
-        "layer1.opacity": 0,
+        "layer0.opacity": 0,
 
         // Tab close modified hover settings
 
         //"layer2.texture": "Preap/assets/tab-dirty-active.png",
-        "layer2.texture": {
+        "layer1.texture": {
             "keyframes":
             [
                 "Preap/assets/close_tab/tab-dirty.png",
@@ -165,46 +159,89 @@
             "loop": true,
             "frame_time": 0.800,
         },
-        "layer2.opacity": 0
-    },
-        // Tab button size
-    {
-        "class": "tab_close_button",
-        "settings": ["!show_tab_close_buttons"],
-        "content_margin": [0, 0]
+        "layer1.opacity": 0
     },
 
+        //
+        // DEFAULT CLOSE BUTTONS
+        //
+
+        // Default close button
+    {
+        "class": "tab_close_button",
+        "settings": ["show_tab_close_buttons"],
+        "layer0.opacity": 0.25,
+    },
         // Tab close button hover
     {
         "class": "tab_close_button",
+        "settings": ["show_tab_close_buttons"],
         "attributes": ["hover"],
-        "layer0.opacity": 0,
-        "layer1.opacity": 1
+        "layer0.opacity": 1,
     },
         // Tab dirty button
     {
         "class": "tab_close_button",
         "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
         "layer0.opacity": 0,
-        "layer1.opacity": 0,
-        "layer2.opacity": 0.2
+        "layer1.opacity": 0.4
+    },
+        // Options
+    {
+        "class": "tab_close_button",
+        "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
+        "settings": ["highlight_modified_tabs"],
+        "layer0.opacity": 0,
+        "layer1.opacity": 0.4
     },
         // Tab dirty button hover
     {
         "class": "tab_close_button",
         "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
         "attributes": ["hover"],
-        "layer0.opacity": 0,
-        "layer1.opacity": 1,
-        "layer2.opacity": 0
+        "layer0.opacity": 1,
+        "layer1.opacity": 0
+    },
+        // Options
+    {
+        "class": "tab_close_button",
+        "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
+        "settings": ["highlight_modified_tabs"],
+        "attributes": ["hover"],
+        "layer0.opacity": 1,
+        "layer1.opacity": 0
     },
         // Tab dirty button active
     {
         "class": "tab_close_button",
         "parents": [{"class": "tab_control", "attributes": ["selected", "dirty"]}],
         "layer0.opacity": 0,
-        "layer1.opacity": 0,
-        "layer2.opacity": 1
+        "layer1.opacity": 1
+    },
+        // Options
+    {
+        "class": "tab_close_button",
+        "parents": [{"class": "tab_control", "attributes": ["selected", "dirty"]}],
+        "settings": ["highlight_modified_tabs"],
+        "layer0.opacity": 0,
+        "layer1.opacity": 1
+    },
+        // Tab dirty button active hover
+    {
+        "class": "tab_close_button",
+        "parents": [{"class": "tab_control", "attributes": ["selected", "dirty"]}],
+        "attributes": ["hover"],
+        "layer0.opacity": 1,
+        "layer1.opacity": 0
+    },
+        // Options
+    {
+        "class": "tab_close_button",
+        "parents": [{"class": "tab_control", "attributes": ["selected", "dirty"]}],
+        "settings": ["highlight_modified_tabs"],
+        "attributes": ["hover"],
+        "layer0.opacity": 1,
+        "layer1.opacity": 0
     },
         // Tab close button hidden with highlight modified flag true
     {
@@ -213,7 +250,7 @@
         "class": "tab_control",
         "settings": ["!show_tab_close_buttons", "highlight_modified_tabs"],
         "attributes": ["dirty"],
-        "content_margin": [22, 6, 15, 4]
+        "content_margin": [12, 4, 9, 4]
     },
         // Tab dirty button (close button hidden)
     {
@@ -221,8 +258,9 @@
         "settings": ["!show_tab_close_buttons", "highlight_modified_tabs"],
         "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
         "content_margin": [8, 8],
-        "layer0.opacity": 1.0,
-        "layer1.opacity": 0
+        "layer0.opacity": 0,
+        "layer1.opacity": 0,
+        "layer2.opacity": 0
     },
     {
         "class": "tab_label",
@@ -533,6 +571,7 @@
     {
         "class": "sidebar_heading",
         "color": [120, 120, 120],
+        "content_margin": [8, 8],
         "font.bold": true
 
     },
@@ -556,7 +595,7 @@
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-        "color": [240, 240, 240]
+        "color": [243, 103, 129]
     },
         // Sidebar entry transient
     {
@@ -758,14 +797,14 @@
     },
     {
         "class": "quick_panel_label",
-        "fg": [69, 183, 207],
-        "match_fg": [69, 190, 207],
+        "fg": [138, 138, 138],
+        "match_fg": [243, 103, 129],
         "selected_fg": [255, 255, 255, 255],
         "selected_match_fg": [255, 255, 255]
     },
     {
         "class": "quick_panel_path_label",
-        "fg": [75, 75, 75],
+        "fg": [99, 99, 99],
         "match_fg": [69, 190, 207],
         "selected_fg": [255, 255, 255, 255],
         "selected_match_fg": [255, 255, 255]
@@ -884,7 +923,6 @@
         "settings": ["findreplace_small"],
         "content_margin": [10, 4, 10, 5]
     },
-
         //
         // BOTTOM PANEL ICONS - GROUP 1
         //
@@ -894,7 +932,7 @@
     {
         "class": "icon_regex",
         "layer0.texture": "Preap/assets/icon-regex-off.png",
-        "layer0.opacity": 1.0,
+        "layer0.opacity": 1,
         "content_margin": [8, 8]
     },
     {
@@ -1025,9 +1063,8 @@
     {
         "class": "icon_in_selection",
         "layer0.texture": "Preap/assets/icon-selection-off.png",
-        "layer0.opacity": 1.0,
-        "content_margin": [8, 8],
-        "layer0.tint": [148,211,209]
+        "layer0.opacity": 1,
+        "content_margin": [8, 8]
     },
     {
         "class": "icon_in_selection",
