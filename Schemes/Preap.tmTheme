@@ -299,7 +299,7 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>css property-name: psuedos and attibutes</string>
+			<string>css/less property-name: psuedos and attibutes</string>
 			<key>scope</key>
 			<string>support.type.property-name.css, support.type.property-name.scss, entity.other.attribute-name.pseudo-element.css, entity.other.attribute-name.pseudo-class.css, entity.other.attribute-name.attribute.css, variable.scss, meta.property-name.scss, meta.property-name.less, meta.property-list.css meta.property-name.css</string>
 			<key>settings</key>
@@ -615,13 +615,46 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>LESS variables</string>
+			<string>LESS variables declaration</string>
 			<key>scope</key>
-			<string>variable.other.less</string>
+			<string>source.less variable.declaration.less, source.less variable.other.less</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#de6c81ff</string>
+				<string>#DE6C81</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>LESS other variables</string>
+			<key>scope</key>
+			<string>source.less meta.property-value.css variable.other.less</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#BA4960</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>LESS mixin parameters</string>
+			<key>scope</key>
+			<string>source.less parameter.less variable.other.less</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#DE6C81</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>LESS function</string>
+			<key>scope</key>
+			<string>source.less meta.property-value.css support.function.less</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#DC9051</string>
 			</dict>
 		</dict>
 		<dict>
@@ -813,6 +846,19 @@
 		</dict>
 		<dict>
 			<key>name</key>
+			<string>css: non-standard color</string>
+			<key>scope</key>
+			<string>source.less meta.property-value.css support.constant.color.non-standard</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#dfc354ff</string>
+				<key>fontStyle</key>
+				<string>italic underline</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
 			<string>Function Definition</string>
 			<key>scope</key>
 			<string>meta.function entity.name.function, entity.name.function.abp</string>
@@ -846,6 +892,115 @@
 				<string>#b5494e30</string>
 			</dict>
 		</dict>
+
+		<!-- JAVASCRIPT SPECIFIC -->
+		<!-- ########################## -->
+
+		<dict>
+			<key>name</key>
+			<string>Javascript: Double quote String</string>
+			<key>scope</key>
+			<string>text.html.basic source.js.embedded.html entity.name.tag.script.html</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#e3960eff</string>
+			</dict>
+		</dict>
+
+
+		<!-- JSON SPECIFIC -->
+		<!-- ########################## -->
+
+		<dict>
+			<key>name</key>
+			<string>Javascript: Double quote String</string>
+			<key>scope</key>
+			<string>source.json meta.structure.dictionary.json</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#DC9051</string>
+			</dict>
+		</dict>
+
+		<dict>
+			<key>name</key>
+			<string>Javascript: Double quote String</string>
+			<key>scope</key>
+			<string>source.json meta.structure.dictionary.json string.quoted.double.json</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#4BD2C5</string>
+				<key>background</key>
+				<string>#0A515030</string>
+			</dict>
+		</dict>
+
+		<!-- HTML SPECIFIC -->
+		<!-- ########################## -->
+
+		<dict>
+			<key>name</key>
+			<string>Html: Embedded script and link</string>
+			<key>scope</key>
+			<string>text.html.basic text.html.twig,  source.js.embedded.html entity.name.tag.script.html</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#DA840F</string>
+			</dict>
+		</dict>
+
+		<dict>
+			<key>name</key>
+			<string>Html: Double quoted string</string>
+			<key>scope</key>
+			<string>text.html.basic string.quoted.double.html</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#C9EEEE</string>
+				<key>background</key>
+				<string>#0A515030</string>
+			</dict>
+		</dict>
+
+		<!-- XML SPECIFIC -->
+		<!-- ########################## -->
+
+		<dict>
+			<key>name</key>
+			<string>XML: tags</string>
+			<key>scope</key>
+			<string>text.xml meta.tag.xml entity.name.tag.localname.xml</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#B7DF81</string>
+				<key>background</key>
+				<string>#316D2230</string>
+			</dict>
+		</dict>
+
+		<!-- TWIG SPECIFIC -->
+		<!-- ########################## -->
+
+		<dict>
+			<key>name</key>
+			<string>TWIG: doubled quote string</string>
+			<key>scope</key>
+			<string>text.html.twig meta.tag.template.value.twig string.quoted.single.twig, text.html.twig meta.tag.template.value.twig string.quoted.double.twig</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#43D1BE</string>
+				<key>background</key>
+				<string>#0A515030</string>
+			</dict>
+		</dict>
+
 	</array>
 	<key>colorSpaceName</key>
 	<string>sRGB</string>
