@@ -47,7 +47,7 @@ However if you use packages like [SublimeLinter](https://github.com/SublimeLinte
 *** IMPORTANT - MAKE SURE TO RESTART SUBLIME AFTER INSTALLING AND ACTIVATING PREAP ***
 
 
-## Markdown Settings
+<!-- ## Markdown Settings
 ![markdown](http://i.imgur.com/alcPmqB.jpg)
 
 #### To enable Preap for Markdown
@@ -67,7 +67,7 @@ First, **open a markdown(.md) file**, then navigate to `Sublime Text` > `Prefere
 		"wrap_width": 80  // Sets the # of characters per line
 	}
 
-However if you use packages like [SublimeLinter](https://github.com/SublimeLinter/) color theme might fail to load with . To load it manually, delete the `color_scheme` line and selelct from the `Preferences tab -> Color scheme -> Preap -> Schemes -> preap-markdown`. Don't worry about the `color_scheme` line in your `Preferences.sublime_settings`, it'll be updated automatically.
+However if you use packages like [SublimeLinter](https://github.com/SublimeLinter/) color theme might fail to load with . To load it manually, delete the `color_scheme` line and selelct from the `Preferences tab -> Color scheme -> Preap -> Schemes -> preap-markdown`. Don't worry about the `color_scheme` line in your `Preferences.sublime_settings`, it'll be updated automatically. -->
 
 
 ## Theme specific settings
@@ -113,10 +113,8 @@ for example:
 
 	"sidebar_large": true
 
-If you want you can now change the sidebar font size by adding one of this settings:
+If you want you can now change the sidebar font size by adding one of this settings `"sidebar_font_big": true` or `"sidebar_font_small": true`.
 
-	"sidebar_font_big": true,
-	"sidebar_font_small": true
 
 ## A few of my favorite options
 These are just a few of my other favorite options for Sublime Text:
