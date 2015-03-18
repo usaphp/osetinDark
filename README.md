@@ -113,7 +113,10 @@ for example:
 
 	"sidebar_large": true
 
+If you want you can now change the sidebar font size by adding one of this settings:
 
+	"sidebar_font_big": true,
+	"sidebar_font_small": true
 
 ## A few of my favorite options
 These are just a few of my other favorite options for Sublime Text:
