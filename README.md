@@ -87,7 +87,10 @@ OR
 	"tabs_medium": true
 
 
-
+You can now enable the tabs border with the setting:
+	
+	"tabs_border": true
+	
 
 #### Find & Replace Small Size Option
 
