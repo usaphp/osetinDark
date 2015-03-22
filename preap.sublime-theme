@@ -173,9 +173,7 @@
         "layer0.texture": "Preap/assets/tab-close.png",
         "layer0.opacity": 0,
 
-        // Tab close modified hover settings
-
-        //"layer2.texture": "Preap/assets/tab-dirty-active.png",
+        // Tab modified animation
         "layer1.texture": {
             "keyframes":
             [
@@ -185,9 +183,26 @@
             "loop": true,
             "frame_time": 0.800,
         },
+        "layer1.opacity": 0,
+
+        // Tab modified static
+        "layer2.texture": "Preap/assets/tab-dirty-active.png",
+        "layer2.opacity": 0,
+    },
+        // Option
+    {
+        "class": "tab_close_button",
+        "settings": ["static_modified_tab"],
+        "content_margin": [8, 8],
+
+        // Tab close default layer
+        "layer0.texture": "Preap/assets/tab-close.png",
+        "layer0.opacity": 0,
+
+        // Tab close modified
+        "layer1.texture": "Preap/assets/tab-dirty-active.png",
         "layer1.opacity": 0
     },
-
         //
         // DEFAULT CLOSE BUTTONS
         //
