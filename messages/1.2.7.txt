@@ -8,4 +8,4 @@ ____________________________________________________________________________
 
 ## UI IMPROVEMENTS
 
-	- Added static modified tab indicator (add "static_modified_tab": true) in your preferences.
+	- Added static unsaved tab indicator (add "static_modified_tab": true) in your preferences.
