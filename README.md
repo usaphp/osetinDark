@@ -16,7 +16,6 @@ File icons are only supported for **[Dev Builds 3062](http://www.sublimetext.com
 
 ## Installation
 
-### Recommended
 For easy installation, install with [Package Control](https://packagecontrol.io).
 
 1. Press <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> on OS X or <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> on Windows/Linux
@@ -70,29 +69,20 @@ First, **open a markdown(.md) file**, then navigate to `Sublime Text` > `Prefere
 However if you use packages like [SublimeLinter](https://github.com/SublimeLinter/) color theme might fail to load with . To load it manually, delete the `color_scheme` line and selelct from the `Preferences tab -> Color scheme -> Preap -> Schemes -> preap-markdown`. Don't worry about the `color_scheme` line in your `Preferences.sublime_settings`, it'll be updated automatically. -->
 
 
-## Theme specific settings
-This theme allow specific settings, see below:
-
-#### Tab Height Size Options
+## Tab Size and Appearance Options
 
 ![image](http://i.imgur.com/vYDRxth.jpg)
 
-You can change the height of the file tabs by adding either to your preferences file:
+You can edit the height, the appearance of the file tabs by adding this setting to your preferences file:
 
 
-	"tabs_small": true
+	"tabs_small": true, 			// Set tabs size to small
+	"tabs_medium": true, 			// Set tabs size to medium
+	"tabs_border": true, 			// Show the border of the tabs
+	"static_modified_tab": true 	// Disable unsaved flashing indicator
 
-OR
 
-	"tabs_medium": true
-
-
-You can now enable the tabs border with the setting:
-	
-	"tabs_border": true
-	
-
-#### Find & Replace Small Size Option
+## Find & Replace Small Size Option
 
 ![image](http://i.imgur.com/zyKx37T.jpg)
 
@@ -103,20 +93,21 @@ You can change the height of the Find/Replace inputs by adding the following to 
 
 After enabling the smaller size, you'll need to drag the height of the Find/Replace panel up and down to adjust it to the new dimemension.
 
-#### Sidebar Size Options
+## Sidebar Size Options
 
 ![image](http://i.imgur.com/3OIKP5d.jpg)
 
 You can change the vertical spacing of the sidebar by changing `default` to `large`, `xlarge`:
 
 
-	"sidebar_default": true
+	"sidebar_default": true,
+	"sidebar_large": true,
+	"sidebar_xlarge": true
 
-for example:
-
-	"sidebar_large": true
-
-If you want you can now change the sidebar font size by adding one of this settings `"sidebar_font_big": true` or `"sidebar_font_small": true`.
+If you want you can change the sidebar font size by adding one of this settings
+	
+	"sidebar_font_big": true,
+	"sidebar_font_small": true
 
 
 ## A few of my favorite options
