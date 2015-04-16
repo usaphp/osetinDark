@@ -46,29 +46,6 @@ However if you use packages like [SublimeLinter](https://github.com/SublimeLinte
 *** IMPORTANT - MAKE SURE TO RESTART SUBLIME AFTER INSTALLING AND ACTIVATING PREAP ***
 
 
-<!-- ## Markdown Settings
-![markdown](http://i.imgur.com/alcPmqB.jpg)
-
-#### To enable Preap for Markdown
-
-First, **open a markdown(.md) file**, then navigate to `Sublime Text` > `Preferences` > `Settings - More` > `Syntax Specific - User`  in the menu bar.
-
-
-#### Add to your current settings or replace with the following:
-
-	{
-		"color_scheme": "Packages/Preap/Schemes/preap-markdown.tmTheme",
-		"draw_centered": true, // Centers the column in the window
-		"draw_indent_guides": false,
-		"font_size": 15,
-		"trim_trailing_white_space_on_save": false,
-		"word_wrap": true,
-		"wrap_width": 80  // Sets the # of characters per line
-	}
-
-However if you use packages like [SublimeLinter](https://github.com/SublimeLinter/) color theme might fail to load with . To load it manually, delete the `color_scheme` line and selelct from the `Preferences tab -> Color scheme -> Preap -> Schemes -> preap-markdown`. Don't worry about the `color_scheme` line in your `Preferences.sublime_settings`, it'll be updated automatically. -->
-
-
 ## Tab Size and Appearance Options
 
 ![image](http://i.imgur.com/vYDRxth.jpg)
