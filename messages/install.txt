@@ -1,48 +1,48 @@
-____________________________________________________________________________
-|
-|	╔═╗╦═╗╔═╗╔═╗╔═╗   Preap Dark Theme
-|	╠═╝╠╦╝║╣ ╠═╣╠═╝   Sublime Text 3
-|	╩  ╩╚═╚═╝╩ ╩╩     https://github.com/equinusocio/preap
-|____________________________________________________________________________
+________________________________________________________________________________
+
+╔═╗╦═╗╔═╗╔═╗╔═╗   Preap Dark Theme
+╠═╝╠╦╝║╣ ╠═╣╠═╝   Sublime Text 3
+╩  ╩╚═╚═╝╩ ╩╩     https://github.com/equinusocio/preap
+________________________________________________________________________________
 
 
 
-	To activate the theme, add or replace your current theme settings with the code below.
-	****************************************************************************
+To activate the theme, add or replace your current settings with the code below.
+********************************************************************************
 
-	{
-		"theme": "preap.sublime-theme",
-		"color_scheme": "Packages/Preap/Schemes/preap.tmTheme",
-	}
-
-
-	****************************************************************************
-	MAKE SURE TO RESTART SUBLIME AFTER INSTALLING AND ACTIVATING PREAP
+{
+	"theme": "preap.sublime-theme",
+	"color_scheme": "Packages/Preap/Schemes/preap.tmTheme",
+}
 
 
-
-	Tabs Options
-	••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
-
-	"tabs_small": true,             // Set tabs size to small
-	"tabs_medium": true,            // Set tabs size to medium
-	"tabs_border": true,            // Show the border of the tabs
-	"static_modified_tab": true     // Disable unsaved flashing indicator
+MAKE SURE TO RESTART SUBLIME AFTER INSTALLING AND ACTIVATING PREAP
+********************************************************************************
 
 
 
-	Find & Replace Option
-	••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+Tabs Options
+••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
 
-	"findreplace_small": true		// Enale find & replace small panel
+"tabs_small": true,             // Set tabs size to small
+"tabs_medium": true,            // Set tabs size to medium
+"tabs_border": true,            // Show the border of the tabs
+"static_modified_tab": true     // Disable unsaved flashing indicator
 
 
 
-	Sidebar Options
-	••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+Find & Replace Option
+••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
 
-	"sidebar_default": true,
-	"sidebar_large": true,
-	"sidebar_xlarge": true
-	"sidebar_font_big": true,
-	"sidebar_font_small": true
+"findreplace_small": true		// Enable find & replace small panel
+
+
+
+Sidebar Options
+••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+"sidebar_default": true,		// Set the default treeview size
+"sidebar_large": true,			// Set the large treeview size
+"sidebar_xlarge": true			// Set the extra large treeview size
+"sidebar_font_big": true,		// Set the big font size in the treeview
+"sidebar_font_small": true 		// Set the small font size in the treeview
