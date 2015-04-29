@@ -1,0 +1,198 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Preap by equinusocio</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Preap</h1>
+        <p>Dark UI for Sublime Text by Mattia Astorino</p>
+
+        <p class="view"><a href="https://github.com/equinusocio/preap">View the Project on GitHub <small>equinusocio/preap</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/equinusocio/preap/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/equinusocio/preap/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/equinusocio/preap">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a id="preap-dark-theme" class="anchor" href="#preap-dark-theme" aria-hidden="true"><span class="octicon octicon-link"></span></a>Preap Dark Theme</h1>
+
+<h2>
+<a id="about" class="anchor" href="#about" aria-hidden="true"><span class="octicon octicon-link"></span></a>About</h2>
+
+<p>Preap is a minimal Sublime Text theme and a syntax color scheme. It was originally just a slightly tweaked version of the <a href="https://github.com/jamiewilson/predawn">Predawn</a> theme. </p>
+
+<p><img src="http://i.imgur.com/zLcqwXA.jpg" alt="image"></p>
+
+<p><a href="http://i.imgur.com/zLcqwXA.jpg">View a larger screenshot</a></p>
+
+<h2>
+<a id="requirements" class="anchor" href="#requirements" aria-hidden="true"><span class="octicon octicon-link"></span></a>Requirements</h2>
+
+<p><strong>Sublime Text 3 (recent build)</strong>
+File icons are only supported for <strong><a href="http://www.sublimetext.com/3dev">Dev Builds 3062</a>+</strong>._</p>
+
+<h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<p>For easy installation, install with <a href="https://packagecontrol.io">Package Control</a>.</p>
+
+<ol>
+<li>Press <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> on OS X or <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> on Windows/Linux</li>
+<li>Type <code>Install Package</code>
+</li>
+<li>Search <code>preap</code>
+</li>
+</ol>
+
+<p><strong>Other Methods</strong></p>
+
+<p>You can clone the repo to your <code>Packages</code> folder. Just make sure the repo folder is named <code>Preap</code>.</p>
+
+<p>Of course, you can always <a href="https://github.com/equinusocio/preap/releases/latest">download latest release</a> and install manually, too. After download, extract zip and rename the folder to "Preap" then copy it to the <code>Packages</code>folder ( <code>Sublime Text</code> &gt; <code>Preferences</code> &gt; <code>Browse packages...</code> )</p>
+
+<h2>
+<a id="activating-the-theme" class="anchor" href="#activating-the-theme" aria-hidden="true"><span class="octicon octicon-link"></span></a>Activating the Theme</h2>
+
+<p>Open your user settings file <code>preferences.sublime-settings</code> as shown below:</p>
+
+<p><img src="http://i.imgur.com/ZTr1qXo.png" alt="image"></p>
+
+<p>To activate the theme, add or replace your current theme settings with the code below.</p>
+
+<pre><code>{
+    "theme": "preap.sublime-theme",
+    "color_scheme": "Packages/Preap/Schemes/preap.tmTheme",
+}
+</code></pre>
+
+<p>However if you use packages like <a href="https://github.com/SublimeLinter/">SublimeLinter</a> color theme might fail to load with . To load it manually, delete the <code>color_scheme</code> line and selelct from the <code>Preferences tab -&gt; Color scheme -&gt; Preap -&gt; Schemes -&gt; Preap</code>. Don't worry about the <code>color_scheme</code> line in your <code>Preferences.sublime_settings</code>, it'll be updated automatically.</p>
+
+<p>*** IMPORTANT - MAKE SURE TO RESTART SUBLIME AFTER INSTALLING AND ACTIVATING PREAP ***</p>
+
+
+
+<h2>
+<a id="tab-size-and-appearance-options" class="anchor" href="#tab-size-and-appearance-options" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tab Size and Appearance Options</h2>
+
+<p><img src="http://i.imgur.com/vYDRxth.jpg" alt="image"></p>
+
+<p>You can edit the height, the appearance of the file tabs by adding this setting to your preferences file:</p>
+
+<pre><code>"tabs_small": true,             // Set tabs size to small
+"tabs_medium": true,            // Set tabs size to medium
+"tabs_border": true,            // Show the border of the tabs
+"static_modified_tab": true     // Disable unsaved flashing indicator
+</code></pre>
+
+<h2>
+<a id="find--replace-small-size-option" class="anchor" href="#find--replace-small-size-option" aria-hidden="true"><span class="octicon octicon-link"></span></a>Find &amp; Replace Small Size Option</h2>
+
+<p><img src="http://i.imgur.com/zyKx37T.jpg" alt="image"></p>
+
+<p>You can change the height of the Find/Replace inputs by adding the following to preferences file:</p>
+
+<pre><code>"findreplace_small": true
+</code></pre>
+
+<p>After enabling the smaller size, you'll need to drag the height of the Find/Replace panel up and down to adjust it to the new dimemension.</p>
+
+<h2>
+<a id="sidebar-size-options" class="anchor" href="#sidebar-size-options" aria-hidden="true"><span class="octicon octicon-link"></span></a>Sidebar Size Options</h2>
+
+<p><img src="http://i.imgur.com/3OIKP5d.jpg" alt="image"></p>
+
+<p>You can change the vertical spacing of the sidebar by changing <code>default</code> to <code>large</code>, <code>xlarge</code>:</p>
+
+<pre><code>"sidebar_default": true,
+"sidebar_large": true,
+"sidebar_xlarge": true
+</code></pre>
+
+<p>If you want you can change the sidebar font size by adding one of this settings</p>
+
+<pre><code>"sidebar_font_big": true,
+"sidebar_font_small": true
+</code></pre>
+
+<h2>
+<a id="a-few-of-my-favorite-options" class="anchor" href="#a-few-of-my-favorite-options" aria-hidden="true"><span class="octicon octicon-link"></span></a>A few of my favorite options</h2>
+
+<p>These are just a few of my other favorite options for Sublime Text:</p>
+
+<pre><code>// Typography
+
+"font_face": "Consolas",
+"font_size": 14,
+"font_options": ["no_round"],
+"highlight_line": true,
+"caret_extra_width": 1,
+"caret_style": "phase",
+"word_wrap": false,
+
+// Whitespace, Matching, Copy &amp; Auto-Complete
+
+"copy_with_empty_selection": false,
+"drag_text": false,
+"match_brackets_content": false,
+"match_selection": false,
+"match_tags": false,
+"translate_tabs_to_spaces": true,
+"trim_trailing_white_space_on_save": true,
+
+// Interface &amp; Behavior
+
+"close_windows_when_empty": false,
+"draw_minimap_border": true,
+"enable_tab_scrolling": false,
+"overlay_scroll_bars": "enabled",
+"open_files_in_new_window": false,
+"preview_on_click": false,
+"scroll_past_end": true,
+"scroll_speed": 5.0,
+"show_full_path": false,
+</code></pre>
+
+<h2>
+<a id="some-recommendations" class="anchor" href="#some-recommendations" aria-hidden="true"><span class="octicon octicon-link"></span></a>Some recommendations</h2>
+
+<p>Also, I highly recommend these Sublime Text packages:</p>
+
+<ul>
+<li>
+<a href="https://github.com/sergeche/emmet-sublime">Emmet</a><br>
+</li>
+<li>
+<a href="https://github.com/jisaacks/GitGutter">GitGutter</a><br>
+</li>
+<li>
+<a href="http://wbond.net/sublime_packages/sftp">SFTP</a><br>
+</li>
+<li>
+<a href="https://github.com/titoBouzout/SideBarEnhancements">Sidebar Enhancements</a><br>
+</li>
+</ul>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/equinusocio">equinusocio</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
